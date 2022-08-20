@@ -40,7 +40,7 @@
 					ERROR.set([
 						'',
 						"password doesn't match confirm password!",
-						"confirm password doesn't match password!",
+						"confirm password doesn't match password",
 					]);
 					RESET_ERROR();
 				}
