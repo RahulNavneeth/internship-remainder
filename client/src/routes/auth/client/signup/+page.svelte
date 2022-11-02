@@ -28,6 +28,13 @@
 			console.log(get_user);
 			if (get_user.length === 0) {
 				if (password === confirm_password) {
+					await axios.post(USER_DATA_URL, {
+						data: [{ username: username, password: password }],
+						props: {
+							bgrgb: [0, 0, 0, 0],
+							font: 'Roboto Mono',
+						},
+					});
 					goto('/auth/client/login');
 				} else {
 					ERROR.set([
