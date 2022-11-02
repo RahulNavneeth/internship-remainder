@@ -23,6 +23,7 @@ function createWindow() {
 
 	const mainWindow = new BrowserWindow({
 		title: 'Agaram REMAINDER',
+		titleBarStyle: 'hidden',
 		backgroundColor: '#f5f5f5',
 		autoHideMenuBar: true,
 		minHeight: 650,

@@ -31,7 +31,7 @@
 					await axios.post(USER_DATA_URL, {
 						data: [{ username: username, password: password }],
 						props: {
-							bgrgb: [0, 0, 0, 0],
+							bgrgb: [255, 255, 255],
 							font: 'Roboto Mono',
 						},
 					});
